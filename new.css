@@ -231,7 +231,9 @@ color: red; /* Dolu ürəyin rəngi qırmızı olsun */
   color: #007bff;
   cursor: pointer;
 }
-
+.animated {
+  margin-bottom: 10px;
+}
 /* Notification */
 .notification {
   position: fixed;
@@ -975,6 +977,10 @@ font-size: 1.5em;
       bottom: 130px;
       font-size: 13px;
       margin-left: 10px;
+    }
+    .xproduct{
+      position: absolute;
+      top: 215px;
     }
     .old-price{
       font-size: 10px;
