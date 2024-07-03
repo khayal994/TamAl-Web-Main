@@ -143,7 +143,7 @@ body {
   right: 50px;
   bottom: 38px;
   position: absolute;
-  top: 9px;
+  top: 15px;
 }
 
 .favorites .count {
@@ -240,8 +240,9 @@ color: red; /* Dolu ürəyin rəngi qırmızı olsun */
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #4caf50;
-  color: white;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.33);
+  color: rgb(0, 0, 0);
   padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -258,6 +259,7 @@ color: red; /* Dolu ürəyin rəngi qırmızı olsun */
 .notification .notification-icon {
   margin-right: 10px;
   font-size: 1.2em;
+  color: rgb(2, 215, 2);
 }
 /* Favorilər Page */
 .favorites-pagex {
@@ -908,9 +910,16 @@ font-size: 1.5em;
       }
       /* Responsive Styles */
   @media (max-width: 768px) {
-    /* .product-grid {
-      gap: -10px;
-    }   */
+    .enYeniAnimated{
+      top: 30px;
+      margin-left: 20px;
+    }
+    .notification{
+      width: 80%;
+    }
+    .favorites .icon{
+      font-size: 1.2em;
+    }
        .cartResponsive{
         position: absolute;
         bottom: 65px;
@@ -922,8 +931,9 @@ font-size: 1.5em;
     }
     .favoritesResponsive{
       position: absolute;
-      top: -14px;
-      right: -5px;
+      top: -23px;
+      right: -8px;
+      font-size: 2em;
     }
     .sebeticonResponsive{
       margin-right: 40px;
