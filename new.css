@@ -1,3 +1,5 @@
+
+/* Index2  */
 .user-actions {
   position: relative;
 }
@@ -1077,6 +1079,7 @@ font-size: 1.5em;
         font-size: 20px; /* İkonların daha uyğun görünməsi üçün */
     }
   }
+
   body {
       --bs-link-color: #333;
       --bs-link-hover-color:#333;
