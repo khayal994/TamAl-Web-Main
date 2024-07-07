@@ -353,6 +353,12 @@ color: #007bff;
 cursor: pointer;
 margin-top: 10px;
 }
+.add-to-cartlar{
+  font-size: 1em;
+color: #007bff;
+cursor: pointer;
+margin-top: 10px;
+}
 
 .remove-icon {
 margin-left: 10px;
