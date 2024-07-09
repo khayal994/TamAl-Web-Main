@@ -276,10 +276,15 @@ color: red; /* Dolu ürəyin rəngi qırmızı olsun */
   z-index: 1000;
   overflow-y: auto; /* Scroll çubuğunu əlavə edir */
   padding: 20px; /* Scroll çubuğu içində məzmun arasında məsafə yaradır */
+  background-color: rgb(243, 243, 243);
 }
 
 .favorites-contentx {
   position: relative;
+  background-color: white;
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .favorites-contentx .closex {
@@ -288,6 +293,7 @@ color: red; /* Dolu ürəyin rəngi qırmızı olsun */
   right: 30px;
   font-size: 1.5em;
   cursor: pointer;
+  padding-top: 10px;
 }
 
 /* Product Cards */
