@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <link rel="stylesheet" href="new.css">
 <link rel="stylesheet" href="search.css">
 <style>
@@ -130,9 +131,32 @@ margin-left: 10px;
 font-size: 1.2em;
 }
 
+.navbar-containerkat {
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                position: relative;
+                margin-top: -45px;
+            }
+            .nav-listkat {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            margin-left: 15px;
+        }
 
     /* Responsive adjustments */
     @media (max-width: 768px) {
+        .nav-listkat{
+            margin-left: 2px;
+        }
+        .navbar-containerkat{
+            margin-top: -5px;
+            background-color: rgba(234, 233, 233, 0);
+        }
         .carousel-containerxl{
             margin-left: 10px;
         }
@@ -164,15 +188,8 @@ flex-shrink: 0;
         }
     }
     /* Sidebar animation */
+    
 
-
-            .navbar-containerkat {
-            display: flex;
-            align-items: center;
-            background-color: #f4f4f4;
-            padding: 10px;
-            position: relative;
-        }
 
         .navbarkat {
             flex-grow: 1;
@@ -181,13 +198,6 @@ flex-shrink: 0;
             display: flex; /* Allow flexbox properties for centering */
         }
 
-        .nav-listkat {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-        }
 
         .nav-itemkat {
             margin-right: 10px;
@@ -214,7 +224,8 @@ flex-shrink: 0;
         }
 
         /* Scroll buttons for desktop */
-        @media (min-width: 768px) {
+        @media (min-width: 373px) {
+
             .scroll-btn {
                 display: flex;
                 align-items: center;
@@ -230,14 +241,17 @@ flex-shrink: 0;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 1; /* Ensure buttons are above content */
+                display: none;
             }
 
             .scroll-btn.left {
                 left: 10px;
+                display: none;
             }
 
             .scroll-btn.right {
                 right: 10px;
+                display: none;
                 
             }
 
@@ -245,6 +259,7 @@ flex-shrink: 0;
             .scroll-btn:active {
                 background-color: orangered;
                 color: #fff;
+                display: none;
             }
 
             /* Hide scroll buttons on mobile */
@@ -451,7 +466,7 @@ flex-shrink: 0;
         </div>
         <div class="search-bar search-barx">
             <input type="text" placeholder="Search..." id="searchInput">
-             <button class="buton"><span class="material-icons " onclick="filterProducts()"">search</span></button>
+             <button class="buton"><span class="material-icons " onclick="filterProducts()">search</span></button>
         </div>
         <div class="user-actions">
           <div class="cart-iconlar cartResponsive" >
@@ -479,7 +494,7 @@ flex-shrink: 0;
 </header>
 <button class="w3-bar-item w3-button w3-hide-large w3-hover-none filterx" onclick="w3_open();"><i class="fa fa-filter"></i> Filterlər</button><br><br>
 <div class="navbar-containerkat">
-    <button class="scroll-btn left scroll-btn-desktop">&lt;</button>
+    <button class="scroll-btn left mazqi scroll-btn-desktop">&lt;</button>
     <nav class="navbarkat">
         <ul class="nav-listkat">
             <li class="nav-itemkat" data-category="all"><a href="#"><i style="margin-right: 5px;" class='bx bx-home'></i> Hamısı</a></li>
@@ -493,13 +508,13 @@ flex-shrink: 0;
             <li class="nav-itemkat" data-category="beauty"><a href="#"><i style="margin-right: 5px;" class='bx bx-home' ></i> Ev və bağ üçün</a></li>
         </ul>
     </nav>
-    <button class="scroll-btn right scroll-btn-desktop">&gt;</button>
+    <button class="scroll-btn right mazqi scroll-btn-desktop">&gt;</button>
 </div>
     <!-- Product Cards Section -->
     <div class="carousel-containerxl">
     <div class="carousel-wrapperxl">
         <!-- Product Card 1 -->
-        <div class="product-cardxl product-cardlar product-cardl product-cardx" data-category="all" data-namex="Qara Rəng Kofta oversizesss" data-pricex="$49.99" data-imagex="sekil 37.jpg" data-id="1" data-name="Məhsul 2" data-price="50" data-image="sekil 1.jpg" data-category-filter="Ayaqqabılar" data-name-filter="Kişi Ayaqqabısı" data-gender-filter="men" data-color-filter="black" data-size-filter="42" data-price-filter="50" data-brand-filter="brand1">
+        <div class="product-cardxl product-cardlar product-cardl product-cardx" data-category="all" data-namex="Qara Rəng Kofta oversizesss" data-pricex="$49.99" data-imagex="sekil 37.jpg" data-id="1" data-name="Məhsul 2" data-price="50" data-image="sekil 1.jpg" data-category-filter="Qara Ayaqqabılar" data-name-filter="Kişi Ayaqqabısı" data-gender-filter="men" data-color-filter="black" data-size-filter="42" data-price-filter="50" data-brand-filter="brand1">
             <div class="image-containerxl">
                 <div class="heart-iconxl like-iconx"></div>
                 <img class="product-imagexl" src="sekil 1.jpg" alt="Product Image">
