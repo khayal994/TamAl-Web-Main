@@ -240,7 +240,15 @@ flex-shrink: 0;
             margin-right: 0;
         }
     }
-    @media (min-width: 320px) {
+    @media (max-width: 320px) {
+        .logo h1 {
+            position: absolute;
+            top: 25px;
+            right: 140px;
+        }
+        .navbar-containerkat{
+            max-width: 310px;
+        }
         .product-cardxl{
             background-color: #fff;
 border: 1px solid #ddd;
@@ -543,7 +551,7 @@ flex-shrink: 0;
       </section>
     <div class="header-main  w3-top  w3-large" >
         <div class="logo">
-            <h1>My-Shop.</h1>
+            <h1>My-Shop</h1>
         </div>
         <div class="search-bar search-barx">
             <input type="text" placeholder="Search..." id="searchInput">
